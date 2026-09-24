@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#0a121e" />
+    <title>CC SHOP ZONE - Premium Cards &amp; Secure Simulation Store with Instant Test Delivery</title>
+    <meta name="description" content="CC SHOP ZONE - Premium Cards &amp; Secure Simulation Store with Instant Test Delivery" />
+    <meta property="og:title" content="CC SHOP ZONE - Premium Cards &amp; Secure Simulation Store with Instant Test Delivery" />
+    <meta property="og:description" content="CC SHOP ZONE - Premium Cards &amp; Secure Simulation Store with Instant Test Delivery" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      window.demoPurchaseComplete = function() {
+        var el = document.getElementById("walletCard");
+        if (el) el.style.display = "block";
+      };
+
+      (function hideInternalError() {
+        const hideError = () => {
+          document.querySelectorAll("body *").forEach(el => {
+            if (el.children.length === 0 &&
+                el.textContent &&
+                el.textContent.trim() === "An internal error occurred.") {
+              el.style.display = "none";
+            }
+          });
+        };
+        hideError();
+        if (typeof MutationObserver !== "undefined") {
+          new MutationObserver(hideError).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

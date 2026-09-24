@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  {/* Isometric delivery box based on uploaded image */}
+  {/* Outer hexagon contour */}
+  <path d="M12 2.5 L21 7.7 L21 16.3 L12 21.5 L3 16.3 L3 7.7 Z" />
+  {/* Top face inner edges connecting to center */}
+  <path d="M12 12 L3 7.7" />
+  <path d="M12 12 L21 7.7" />
+  {/* Vertical front spine */}
+  <path d="M12 12 L12 21.5" />
+  {/* Top center packing tape band */}
+  <path d="M8.5 4.5 L15.5 8.5" />
+  {/* Front tape seal flap */}
+  <path d="M14 9.5 L14 13.5 L16.5 12 L16.5 8" />
+</svg>

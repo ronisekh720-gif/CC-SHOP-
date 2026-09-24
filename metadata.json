@@ -1,0 +1,6 @@
+{
+  "name": "CC SHOP ZONE",
+  "description": "CC SHOP ZONE - Premium Cards & Secure Simulation Store with Instant Test Delivery",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
